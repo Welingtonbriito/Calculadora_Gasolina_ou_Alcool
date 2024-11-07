@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script 
+        async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3384046744833302"
+        crossorigin="anonymous">
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="'keywords" content="Calculadora gasolina ou álcool">
+    <meta name="description" content="Descubra qual tipo de combustivel compensa mais abastecer">
+    <meta
+        property="og:title"
+        content="Calculadora Gasolina ou Álcool"
+    />
+    <meta
+        property="og:description"
+        content="Descubra qual tipo de combustivel compensa mais abastecer"
+    />
+    <meta
+        property="og:image"
+        content="./assets/logo.png"
+    />
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora Gasolina ou Álcool</title>
+</head>
+<body>
+
+    <main class="container">
+       
+        <img class="logo" src="./assets/logo.png"  alt="logo da calculadora gasolina ou álcool"/>
+        
+        <h1 class="title">Qual a melhor opção?</h1>
+
+        <form onsubmit="calcular(event)" class="form">
+            <label >Álcool (preço por litro):</label>
+            <input 
+                id="alcool"
+                class="input"
+                type="number"
+                placeholder="4.90"
+                min="1"
+                step="0.01"
+                required
+            />
+            <label >Gasolina (preço por litro):</label>
+            <input 
+                id="gasolina"
+                class="input"
+                type="number"
+                placeholder="6.50"
+                min="1"
+                step="0.01"
+                required
+            />
+
+            <input class="button" type="submit" value="Calcular"/>
+        </form>
+
+        <section id="content-result" class="result hide">
+            <span id="text-result">Compensa usar Álcool</span>
+            <span id="alcool-result">Álcool R$ 3.90</span>
+            <span id="gasolina-result">Gasolina R$ 6.80</span>
+        </section>
+
+    </main>
+
+    <div class="info">
+        <span class="tooltip">Veja como e feito o calculo</span>
+        <a href="calculo.html">
+            <img class="info-img" src="./assets/info.png" alt="Veja como é feito o calculo">
+        </a>
+    </div>
+    
+    <footer>
+        <p>Site criado por
+            <a href="https://github.com/Welingtonbriito" target="_blank">Welington Brito</a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
